@@ -62,14 +62,19 @@ let gameGrid = cardsArray.concat(cardsArray);
 
 gameGrid.forEach(item => {
   const card = document.createElement('div');
-
   card.classList.add('card');
-
   card.dataset.name = item.name;
 
-  card.style.backgroundImage = `url(${item.img})`;
+  const front = document.createElement('div');
+  front.classList.add('front');
+
+  const back = document.createElement('div');
+  back.classList.add('back');
+  back.style.backgroundImage = `url(${item.img})`;
 
   grid.appendChild(card);
+  card.appendChild(front);
+  card.appendChild(back);
 });
 
 gameGrid.sort(() => 0.5 - Math.random());
@@ -90,11 +95,11 @@ grid.addEventListener('click', function(event) {
     count++;
 
     if (count === 1) {
-      firstGuess = clicked.dataset.name;
-      clicked.classList.add('selected');
+      firstGuess = clicked.parentNode.dataset.name;
+      clicked.parentNode.classList.add('selected');
     } else {
-      secondGuess = clicked.dataset.name;
-      clicked.classList.add('selected');
+      secondGuess = clicked.parentNode.dataset.name;
+      clicked.parentNode.classList.add('selected');
     }
 
     previousTarget = clicked;

@@ -98,10 +98,14 @@ grid.addEventListener('click', function(event) {
     }
 
     previousTarget = clicked;
+    let delay = 1200;
 
     if (firstGuess !== '' && secondGuess !== '') {
       if (firstGuess === secondGuess) {
-        match();
+        setTimeout(match, delay);
+        setTimeout(resetGuesses, delay);
+      } else {
+        setTimeout(resetGuesses, delay);
       }
     }
   }

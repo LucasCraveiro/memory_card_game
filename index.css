@@ -50,7 +50,6 @@ body {
 }
 
 .selected {
-  border: 4px solid blue;
   transform: rotateY(180deg);
 }
 
@@ -59,5 +58,5 @@ body {
 }
 
 .match .front {
-  background: white !important;
+  background: url('img/cardright.png') no-repeat center center / contain;
 }

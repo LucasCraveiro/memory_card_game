@@ -2,52 +2,44 @@
 
 const cardsArray = [
   {
-    name: '',
-    img: 'img/'
+    name: 'bird',
+    img: 'img/bird.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'cartoon',
+    img: 'img/cartoon.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'crab',
+    img: 'img/crab.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'dog',
+    img: 'img/dog.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'eggplant',
+    img: 'img/eggplant.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'hippo',
+    img: 'img/hippo.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'minion',
+    img: 'img/minion.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'potatoes',
+    img: 'img/potatoes.png'
   },
   {
-    name: '',
-    img: 'img/'
+    name: 'rhino',
+    img: 'img/rhino.png'
   },
   {
-    name: '',
-    img: 'img/'
-  },
-  {
-    name: '',
-    img: 'img/'
-  },
-  {
-    name: '',
-    img: 'img/'
+    name: 'shark',
+    img: 'img/shark.png'
   }
 ];
 
